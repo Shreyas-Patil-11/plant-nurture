@@ -1,0 +1,97 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #b9e3cd, #fafcfc);
+  padding: 8rem;
+  padding-top: 10rem;
+}
+
+.contact__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 3rem 6rem;
+  border-radius: 2rem;
+}
+
+/* Style for the left side containing contact info and social links */
+.contact-info {
+  flex: 1;
+}
+
+/* Style for headings */
+.contact-info h2 {
+  font-size: 32px;
+  color: #222;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.contact-info h2 span {
+  color: #3ad137;
+}
+
+/* Style for paragraphs */
+.contact-info p,
+.contact-info p a {
+  font-size: 22px;
+  line-height: 1.5;
+  color: #444;
+  text-align: left;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Style for social media links */
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  color: black;
+}
+
+/* Style for vector image on the right side */
+.vector-image {
+  flex: 1;
+}
+
+.vector-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .contact {
+    padding: 1rem;
+    padding-top: 0rem;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .contact__card {
+    flex-direction: column-reverse;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+  }
+  .contact-info h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  .contact-info p,
+  .contact-info p a {
+    font-size: 18px;
+  }
+  .vector-image img {
+    width: 300px;
+  }
+}
